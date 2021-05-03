@@ -1,0 +1,64 @@
+@import "./colors";
+
+
+@mixin flatcard {
+  height: 128px;
+  width: 256px;
+  left: 0px;
+  top: 0px;
+  border-radius: 4px;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  margin: 8px;
+
+
+}
+
+
+@mixin floatcard{
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+.whiteFlatCard{
+  @include flatcard();
+  background-color: $white;
+}
+
+.darkFlatCard{
+
+  @include flatcard();
+  background-color: $lightDark;
+}
+
+
+.whiteFloatCard{
+  @include flatcard();
+  @include floatcard();
+  background-color: $white;
+  &:hover{
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  }
+  &:checked {
+    background-color: #2196F3;
+  }
+}
+
+
+.darkFloatCard{
+  @include flatcard();
+  @include floatcard();
+  background-color: $lightDark;
+  &:hover{
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  }
+  &:checked {
+    background-color: #2196F3;
+  }
+}
