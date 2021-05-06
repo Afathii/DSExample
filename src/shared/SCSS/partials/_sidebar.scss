@@ -1,0 +1,47 @@
+@import "./colors";
+
+@mixin sidebar{
+
+  height: 1086px;
+  width: 256px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+
+
+};
+
+@mixin userProfile{
+
+  height: 144px;
+  width: 255px;
+  left: 0px;
+  top: 0px;
+
+}
+
+
+.lightSidebar{
+  @include sidebar();
+  background-color: $_primaryBG;
+  color: $_primaryText;
+}
+
+
+.darkSidebar{
+  @include sidebar();
+  background-color: $_selectedBG;
+  color: $secondaryText ;
+}
+
+
+.light-userProfile{
+  @include userProfile();
+  border-bottom: 1px solid $_primaryBorder;
+}
+
+
+.dark-userProfile{
+  @include userProfile();
+  border-bottom: 1px solid $secondaryBorder;
+}

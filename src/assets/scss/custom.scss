@@ -1,0 +1,84 @@
+// In this scss you can overwrite all our scss, we suggested you to add your scss into this, so whenever the update comes it will not affect your code.
+
+
+
+//colors
+
+
+
+/*Buttons*/
+$primaryText: #2196F3;
+$secondaryText : #FFFFFF;
+
+$primaryBG:#2196F3;
+$secondaryBG : #E3F2FD;
+
+/*Cards Colors*/
+
+$lightDark: #FAFAFA;
+$white: #FFFFFF;
+$hoverCard : rgba(0, 0, 0, 0.08) ;
+$selectedCard : rgba(33, 150, 243, 1);
+
+
+
+/*Sidebar*/
+
+$_primaryBG  : #FFFFFF;
+$_selectedBG : #212936;
+
+
+/*Sidebar - Fonts Colors*/
+
+$_primaryText  : #000000;
+$secondaryText :#56657F;
+
+$_hoverText: #2196F3;
+
+/*Sidebar - Borders*/
+
+$_primaryBorder: #E5E5E5;
+$secondaryBorder: #313C4E;
+
+
+//Buttons
+.btn {
+  border-radius: 4px;
+}
+.btn-rounded {
+  border-radius: 60px;
+}
+
+.btn.disabled{
+
+  background-color: #9E9E9E !important;
+  color: #ffffff !important;
+
+}
+
+
+/*Tabs*/
+
+.nav-tabs {
+  border-bottom: 2px solid $_primaryBorder !important;
+}
+
+.nav-link.active{
+  border : 0px !important;
+  border-bottom: 2px solid  $_primaryText !important;;
+
+}
+
+.nav-pills {
+  background-color: $primaryBG;
+  color: #FFFFFF8A !important;
+
+
+}
+.nav-pills .nav-link.active {
+  background-color: $primaryBG;
+  color:$white ;
+  border-bottom: 3px solid $_primaryBorder !important;
+
+
+}
